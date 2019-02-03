@@ -22,7 +22,7 @@ RUN \
 RUN pip3 install happybase
 
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
-RUN curl -s "http://download.nextag.com/apache/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar.gz" | tar -xz -C /usr/local/
+RUN curl -s "https://archive.apache.org/dist/hadoop/core/hadoop-2.9.0/hadoop-2.9.0.tar.gz" | tar -xz -C /usr/local/
 RUN cd /usr/local && ln -s ./hadoop-2.9.0 hadoop
 #COPY hadoop-2.9.0.tar.gz /usr/local/
 #RUN cd /usr/local/ && tar xzf hadoop-2.9.0.tar.gz && ln -s ./hadoop-2.9.0 hadoop
